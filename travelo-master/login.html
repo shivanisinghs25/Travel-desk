@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Nothing You Could Do' rel='stylesheet'>
+
+  
+
+	<title>front page test</title>
+
+<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+
+	<style type="text/css">
+
+		body, html
+	     {
+          
+          font-family: 'Nothing You Could Do';font-size: 60px;
+          height: 100%;
+          margin: 0;
+         }
+
+       
+	
+	    .bg 
+	       {
+              /* The image used and gradiet */              
+              background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("front.png");
+
+              /* Full height */
+              height: 100%; 
+
+              /* Center and scale the image nicely */
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+            }
+
+          /* Place text in the middle of the image */
+        .hero-text
+           {
+             text-align: center;
+             position: absolute;
+             top: 59%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             color: white;
+            }
+
+        
+
+         .hero-text button 
+           {
+             border: none;
+             outline: 0;
+             display: inline-block;
+             padding: 10px 25px;
+             color: black;
+             background-color: #ddd;
+             text-align: center;
+             cursor: pointer;
+            }
+         
+          .hero-text button:hover
+           {
+             background-color: #66ff33;
+             color: white;
+           }
+
+          
+
+
+
+.panel-login {
+  border-color: #ccc;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+  color: #00415d;
+  background-color: #fff;
+  border-color: #fff;
+  text-align:center;
+}
+.panel-login>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+  color: #029f5b;
+  font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+  height: 45px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+  outline:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #ccc;
+}
+.btn-login {
+  background-color: #59B2E0;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+  color: #fff;
+  background-color: #53A3CD;
+  border-color: #53A3CD;
+}
+.forgot-password {
+  text-decoration: underline;
+  color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+  text-decoration: underline;
+  color: #666;
+}
+
+.btn-register {
+  background-color: #1CB94E;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  height: auto;
+  font-weight: normal;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+  color: #fff;
+  background-color: #1CA347;
+  border-color: #1CA347;
+}
+
+
+
+  
+               
+
+  	</style>
+
+
+</head>
+<body>
+
+  <div class="bg">
+	  
+    
+
+    <div class="hero-text">
+      <p style="color: white;
+  text-shadow: 2px 2px 4px #000000;">Travlr</p>      
+       <!-- Trigger/Open The Modal -->
+      <button style=" box-shadow: 5px 5px 8px #000000;" id="myBtn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">LOGIN</button>
+    </div>
+         
+    <div class="container">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+    
+         <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-body col-md-6 mx-3">
+             
+             <!-- Modal body-->
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-6 col-md-offset-3">                  
+                   <div class="panel panel-login">
+                     
+                    <div class="panel-heading">
+                       <div class="row">
+
+                         <div class="col-xs-6">
+                           <a href="#" class="active" id="login-form-link">Login</a>
+                         </div>
+
+                         <div class="col-xs-6">
+                           <a href="#" id="register-form-link">Register</a>
+                         </div>
+                       </div> <hr>
+                     </div>
+
+                     <div class="panel-body">
+                       <div class="row">
+                         <div class="col-lg-12">
+
+                           <!--login form-->
+                           <form id="login-form" style="display: block;">
+                             <div class="form-group">
+                               <input type="text" id="usernameL" class="form-control" placeholder="Username" value="">
+                             </div>
+
+                             <!--enter password text field-->
+                             <div class="form-group">
+                              <input type="password" id="passwordL" class="form-control" placeholder="Password" value="" >
+                             </div>
+
+                             <!--enter Mobile no text field-->
+                             <div class="form-group">
+                              <input type="number" id="num" name="n" class="form-control" placeholder="Entre Mobile number to get OTP" value="" required="" >
+                             </div>
+
+                             <div class="form-group">
+                              <div class="row">
+                               <div class="col-sm-6 col-sm-offset-3">
+
+                                <!-- Get OTP Button -->
+                                <input type="button" name="generate_OTP" id="generate-OTP" tabindex="4" class="form-control btn-login" value="Get OTP"  onClick="generate()">
+                                <hr>
+
+                                <!--enter OTP text field-->
+                                <div class="form-group">
+                                  <input type="number" id="otpvaluebyuser" class="form-control" placeholder="Enter 4 digit OTP" value="" >
+                                </div>
+
+                                <!-- login Button -->
+                                <input type="button" name="login-submit" id="login-submit" tabindex="4" class="form-control btn-login" value="Log In"  onClick="check()">
+                               </div>
+                              </div>
+                             </div>
+                           </form>
+
+                           <!--register form-->
+                           <form id="register-form" style="display: none;">
+                             <div class="form-group">
+                               <input type="text" id="usernameR" class="form-control" placeholder="Username" value="" >
+                             </div>
+                  
+                             <div class="form-group">
+                               <input type="password" id="passwordR" class="form-control" placeholder="Password" value="" >
+                             </div>
+                  
+                             <div class="form-group">
+                               <div class="row">
+                                 <div class="col-sm-6 col-sm-offset-3">
+                                   <input type="button" id="register-submit" class="form-control btn-register" value="Register Now"  onClick="store()">
+                                 </div>
+                               </div>
+                             </div>
+
+                            </form>
+                         </div>
+                       </div>
+                     </div>
+                   </div>  
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+  // OTP Enterd by user-- from Login form
+    var otpvaluebyuser = document.getElementById('otpvaluebyuser');
+
+  function generate() {
+    var otpvaluebysystem=generateOTP();
+    console.log(otpvaluebysystem);
+    //alert(otpvaluebysystem)
+
+    
+    // storing input Entered Login-form --aetItem(key,value)
+    localStorage.setItem('otpvaluebysystem', otpvaluebysystem);
+
+    const cnum=document.getElementById("num").value;
+
+    if (cnum == "") {
+      alert("Please Entre phone number")
+    }
+    else{
+
+    /* window.location='https://www.fast2sms.com/dev/bulk?authorization=OANVA8a8mmlMor3QEgyKhFVk9yDydRXDyl2bV5fAmEIhDxFs7XI9FroH8rwx&sender_id=FSTSMS&language=english&route=qt&numbers='+cnum+'&message=18539&variables={FF}&variables_values='+otpvaluebysystem;
+        target = "_blank"; */
+
+         window.open('https://www.fast2sms.com/dev/bulk?authorization=OANVA8a8mmlMor3QEgyKhFVk9yDydRXDyl2bV5fAmEIhDxFs7XI9FroH8rwx&sender_id=FSTSMS&language=english&route=qt&numbers='+cnum+'&message=18539&variables={FF}&variables_values='+otpvaluebysystem);
+        target = "_blank"; 
+    }
+    
+    
+  }
+
+
+
+  function generateOTP()  
+  {
+
+    var digits = '0123456789';
+
+    var otpLength = 4;
+
+    var otp = '';
+
+    for(let i=1; i<=otpLength; i++)
+
+    {
+
+        var index = Math.floor(Math.random()*(digits.length));
+
+        otp = otp + digits[index];
+
+    }
+
+    return otp;
+
+  }
+
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+    // Name and Password from the register-form
+    var usernameR = document.getElementById('usernameR');
+        var passwordR = document.getElementById('passwordR');
+
+        
+
+    // storing input from register-form
+    function store() {
+        localStorage.setItem('usernameR', usernameR.value);
+        localStorage.setItem('passwordR', passwordR.value);
+
+        if (usernameR.value == '' && passwordR.value =='') 
+        {
+            alert("Some Fields Are Empty\n Please Enter all the Feilds");
+        }
+
+        else 
+        {
+        alert("succesfully register\nGo back and Login");
+        }
+    }
+
+    // check if stored data from register-form is equal to entered data in the   login-form
+    function check() {
+
+        // stored data from the register-form
+        var storedusernameR = localStorage.getItem('usernameR');
+        var storedpasswordR = localStorage.getItem('passwordR');
+        // storing input Entered Login-form --aetItem(key,value)
+    localStorage.setItem('otpvaluebyuser', otpvaluebyuser.value);
+
+
+        // stored value of OTP Entred by user
+        var storedotpvaluebyuser = localStorage.getItem('otpvaluebyuser');
+        // stored value of OTP Entred by system
+        var storedotpvaluebysystem = localStorage.getItem('otpvaluebysystem');
+
+        // entered data from the login-form
+        var usernameL = document.getElementById('usernameL');
+        var passwordL = document.getElementById('passwordL');
+        
+
+
+        // check if stored data from register-form is equal to data from login form
+       
+        if (usernameL.value == '' || passwordL.value == '' || otpvaluebyuser.value == '' ) 
+        {
+            alert('Some Fields Are Empty\n Please Enter all the Feilds');
+
+        }
+
+        else if(usernameL.value == storedusernameR && passwordL.value == storedpasswordR && otpvaluebyuser.value==storedotpvaluebysystem)
+         {
+            alert('You are logged in.');
+            window.open('index.html');
+           // window.location = 'main.html';
+          
+          }
+        
+        else {
+            alert('ERROR. Check user name or password');
+        }
+    }
+  
+</script>
+
+
+<script type="text/javascript">
+    //toggle script
+    $(function() {
+
+      $('#login-form-link').click(function(e) 
+      {
+      $("#login-form").delay(100).fadeIn(100);
+      $("#register-form").fadeOut(100);
+      $('#register-form-link').removeClass('active');
+      $(this).addClass('active');
+      e.preventDefault();
+    });
+    $('#register-form-link').click(function(e)
+     {
+      $("#register-form").delay(100).fadeIn(100);
+      $("#login-form").fadeOut(100);
+      $('#login-form-link').removeClass('active');
+      $(this).addClass('active');
+      e.preventDefault();
+    });
+
+    });
+
+</script>
+
+</body>
+
+                    
+</html>
